@@ -35,7 +35,7 @@ class GameOverFragment : Fragment() {
         binding.tryAgainButton.setOnClickListener{view: View ->
             view.findNavController().navigate(GameOverFragmentDirections.actionGameOverFragmentToGameFragment())
         }
-        var args = GameOverFragmentArgs.fromBundle(arguments)
+        var args = GameOverFragmentArgs.fromBundle(arguments!!)
         Toast.makeText(context,
             "NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}",
             Toast.LENGTH_LONG).show()
