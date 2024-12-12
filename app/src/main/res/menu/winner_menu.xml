@@ -24,5 +24,7 @@
         android:icon="@drawable/share"
         android:title="@string/share"
         android:visible="true"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom"/>
+<!--    app:showAsAction="ifRoom" ->  display as menu item in the action bar if there is room-->
+
 </menu>
